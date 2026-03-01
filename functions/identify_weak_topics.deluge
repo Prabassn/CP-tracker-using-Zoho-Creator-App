@@ -1,0 +1,17 @@
+topics = Topic_Master[ID != 0];
+
+for each topic in topics
+{
+    solved = Practice_Log[Topic == topic && Solved == true].count();
+    total = Practice_Log[Topic == topic].count();
+
+    if(total > 0)
+    {
+        ratio = solved / total;
+        
+        if(ratio < 0.5)
+        {
+            info topic.Topic_Name + " is weak";
+        }
+    }
+}

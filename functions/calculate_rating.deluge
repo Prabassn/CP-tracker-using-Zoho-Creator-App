@@ -1,0 +1,13 @@
+rating_before = input.Rating_Before;
+rating_after = input.Rating_After;
+
+change = rating_after - rating_before;
+
+if(change > 0)
+{
+    info "Rating Increased";
+}
+else
+{
+    info "Rating Decreased";
+}

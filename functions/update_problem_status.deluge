@@ -1,0 +1,8 @@
+if(input.Solved == true)
+{
+    info "Problem marked solved";
+}
+else
+{
+    info "Problem unsolved";
+}
